@@ -1,0 +1,145 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+
+.banner-text {
+    color: white;
+    position: absolute;
+    font-size: 5rem;
+    display: block;
+    margin: 4rem 4rem;
+}
+
+#tagline {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2px;
+}
+
+#kw-logo{
+    width: 10rem;
+    margin: 1rem 3.6rem;
+}
+
+
+.cart {
+    display: flex;
+    margin: 1rem 4rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+#cart-logo{
+    width: 2rem;
+}
+
+
+.banner img {
+    width: 100%;
+    
+}
+
+h2 {
+    margin: 0.3rem 6.3rem;
+    padding-top: 100px;
+    font-family: "Playfair Display", serif;
+}
+
+
+.allbooks,.board-games,.handmade-products{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding: 0px 100px;
+}
+
+.book,.game,.handmade {
+    height: 250px;
+}
+
+
+p {
+    padding: 10px 0px;
+    color: #8c8e8a;
+    font-weight: bold;
+    font-size: small;
+}
+
+button {
+    display: flex;
+    background-color: #6196ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 3px;
+    border-radius: 10%;
+    justify-content: center;
+}
+
+.cart-button {
+    height: 15px;
+}
+
+h2,.price,#name,#end-title {
+    font-weight: bold;
+}
+
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 50px;
+    margin-top: 100px;
+}
+
+#kristi{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.contact > #name {
+    font-size: 2rem;
+    text-align: right;
+}
+
+footer p {
+    color: white;
+    text-align: right;
+}
+
+
+#end-title {
+    font-size: x-large;
+}
+
