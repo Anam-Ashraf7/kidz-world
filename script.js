@@ -15,6 +15,20 @@ l.push({
 let count = 0
 let totalamount = 0
 let cents = 0
+var whatsappLink = "https://api.whatsapp.com/send?phone=918075227102&text=Order%20details"
+
+function whatsappApi(){
+    l.forEach((ele) => {
+        if(ele.quantity !== 0){
+            whatsappLink += "%0A" + ele.name + "%20" + ele.quantity
+        }
+    })
+
+    whatsappLink += "%0A" + "The total amount is " + totalamount + "$ and "+ cents + " cents"
+}
+
+
+
 for(let i = 0;i < addBtn.length;i++){
     addBtn[i].addEventListener("click", () => {
         count += 1
@@ -23,6 +37,7 @@ for(let i = 0;i < addBtn.length;i++){
     })
 }
 cartItems.addEventListener("click",() =>{
+    
     for(let i = 0;i < addBtn.length;i++){
         if (l[i].quantity > 0){
             console.log(`Item name: ${l[i].name} - Quantity: ${l[i].quantity}`)
@@ -36,5 +51,7 @@ cartItems.addEventListener("click",() =>{
         }
         
     }
+    whatsappApi()
+    window.open(whatsappLink)
     console.log(`The total amount is ${totalamount} and ${cents} cents`)   
 })
